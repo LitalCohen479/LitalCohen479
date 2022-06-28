@@ -1,0 +1,167 @@
+body {
+  background-color: #0a1f37;
+}
+
+.productCard {
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.481);
+  width: fit-content;
+  background-color: white;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  left: 500px;
+}
+
+.img__root {
+  padding: 1px;
+  border-radius: 5px;
+  width: 300px;
+  height: 200px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.481);
+  background-color: white;
+  margin: 5px;
+  position: relative;
+}
+.img__root img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  color: #d54747;
+}
+
+.item__name {
+  font-size: 25px;
+  top: 60px;
+  right: 55px;
+}
+
+.item__name__input {
+  font-size: 8px;
+  justify-items: center;
+  right: 165px;
+  position: absolute;
+  top: 85px;
+  left: 55px;
+  color: #0f11119f;
+}
+
+.btn__update__item,
+.btn__delete__item,
+.btn__add__item,
+.btn__show__item {
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Amazon Ember", sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 100px;
+}
+
+.btn__delete__item:hover {
+  background-color: #f7fafa;
+}
+
+.btn__delete__item:focus {
+  border-color: #008296;
+  box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+  outline: 0;
+}
+
+.btn__delete__item {
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Amazon Ember", sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 100px;
+  right: 165px;
+  position: absolute;
+  bottom: 15px;
+}
+
+.btn__delete__item:hover {
+  background-color: #f7fafa;
+}
+
+.btn__delete__item:focus {
+  border-color: #008296;
+  box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+  outline: 0;
+}
+
+.input__item {
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+  box-sizing: border-box;
+  color: #0f1111;
+  top: 85px;
+  left: 55px;
+  font-weight: 400;
+  color: #0f11119f;
+}
+
+.item__price {
+  font-size: 19px;
+  top: 65px;
+  right: 60px;
+  position: absolute;
+}
+
+.item__description {
+  font-size: 15px;
+  top: 85px;
+  left: 55px;
+  font-weight: 400;
+  position: absolute;
+  color: #0f11119f;
+}
+
+.edit__title {
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.481);
+  width: fit-content;
+  background-color: white;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  right: 400px;
+  padding: 20px;
+}
