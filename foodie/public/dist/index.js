@@ -1,3 +1,4 @@
+"use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -214,4 +215,55 @@ function renderProducts(items) {
     catch (error) {
         console.error(error);
     }
+}
+function handleLoad() {
+    try {
+        
+        helloServer();
+    }
+    catch (error) {
+        console.log(error);
+    }
+}
+function helloServer() {
+    return __awaiter(this, void 0, void 0, function () {
+        var data, error_5;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    _a.trys.push([0, 2, , 3]);
+                    return [4 /*yield*/, axios.get('/clients/hello')];
+                case 1:
+                    data = (_a.sent()).data;
+                    console.log('data', data);
+                    return [3 /*break*/, 3];
+                case 2:
+                    error_5 = _a.sent();
+                    console.log(error_5);
+                    return [3 /*break*/, 3];
+                case 3: return [2 /*return*/];
+            }
+        });
+    });
+}
+function addToList() {
+    return __awaiter(this, void 0, void 0, function () {
+        var data, error_6;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    _a.trys.push([0, 2, , 3]);
+                    return [4 /*yield*/, axios.get("http://localhost:3002/insert", { foodName: foodName, days: days })];
+                case 1:
+                    data = (_a.sent()).data;
+                    console.log('foodname + days', data);
+                    return [3 /*break*/, 3];
+                case 2:
+                    error_6 = _a.sent();
+                    console.error(error_6);
+                    return [3 /*break*/, 3];
+                case 3: return [2 /*return*/];
+            }
+        });
+    });
 }

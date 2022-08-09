@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,21 +8,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foodie</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js" integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <link rel="stylesheet" href="./dist/style.css">
 </head>
-<body>
-    <h1 class="header">Order some food</h1>
+<script>
+
+
+function setFoodName(event){
+  const foodName = event.target.value;
+  console.log(foodName)
+}
+function setDays(event){
+  const days = event.target.value;
+  console.log(days)
+}
+
+</script>
+<body onload="handleLoad()">
+    
+    <h1 class="header">Foodie</h1>
+    <br>
+ <div id="container__btns">
+    <button class="btn__show__item"><a href="./user.html" id="loginHyper">Login</a></button>
 
         <form onsubmit="handleAddfood(event)">
+            <button class="btn__show__item" onclick="handleGetItems(event)">Menu</button>
+            <div class="App">
+<h1>Crud with mern</h1>
+<label>Food Name:</label>
+<input type="text" class="foodName" onchange="setFoodName(event)">
+<label>Days Since You Ate It:</label>
+<input type="number" class="foodCalories" onchange="setDays(event)">
+<button onclick="addToList()">Add To List</button>
+
+            </div>
+            <br>
             <input type="text" name="name" placeholder="which food to add?" class="input__item">
             <input type="submit" value="Add Food" class="btn__add__item">
-        <button class="btn__show__item" onclick="handleGetItems(event)">menu Items</button>
-
+   
+    </div>
     </form>
     <div id="root"></div>
+
+
 
     <script src="./dist/index.js"></script>
 
 </body>
 </html>
+
+

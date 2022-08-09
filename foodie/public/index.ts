@@ -1,3 +1,7 @@
+
+
+import React, {useState} from "react";
+
 function uid(): string | false {
   try {
     return "id-" + Math.random().toString(16).slice(2);
@@ -165,3 +169,38 @@ function renderProducts(items: Array<Item>): void {
     console.error(error);
   }
 }
+
+
+function handleLoad(){
+  try {
+      helloServer()
+  } catch (error) {
+      console.log(error)
+  }
+}
+
+async function helloServer(){
+  try {
+      //@ts-ignore
+      const {data} = await axios.get('/clients/hello'); //rest-API
+
+      console.log('data', data)
+  } catch (error) {
+      console.log(error)
+  }
+}
+
+
+async function addToList(){
+  try {
+
+    //@ts-ignore
+    const { data } = await axios.get("http://localhost:3002/insert", { foodName: foodName, days: days, })
+    console.log('foodname + days', data)
+    } catch (error) {
+    console.error(error);
+  }
+}
+
+
+

@@ -1,5 +1,7 @@
 body {
   background-color: #0a1f37;
+  width: 100vw;
+  height: 100vh;
 }
 
 .productCard {
@@ -13,7 +15,7 @@ body {
   flex-direction: column;
   justify-content: center;
   position: relative;
-  left: 500px;
+  left: 50px;
 }
 
 .img__root {
@@ -34,6 +36,8 @@ body {
 
 .header {
   color: #d54747;
+  font-size: 4rem;
+  margin: 4rem;
 }
 
 .item__name {
@@ -52,7 +56,16 @@ body {
   color: #0f11119f;
 }
 
+#container__btns {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 5rem;
+}
+
 .btn__update__item,
+.btn__login,
+.btn__signup,
 .btn__delete__item,
 .btn__add__item,
 .btn__show__item {
@@ -61,14 +74,14 @@ body {
   border-radius: 8px;
   box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
   box-sizing: border-box;
-  color: #0f1111;
+  color: #d54747;
   cursor: pointer;
-  display: inline-block;
+  justify-content: center;
   font-family: "Amazon Ember", sans-serif;
   font-size: 13px;
   line-height: 29px;
   padding: 0 10px 0 11px;
-  position: relative;
+  margin: 10px;
   text-align: center;
   text-decoration: none;
   user-select: none;
@@ -133,6 +146,7 @@ body {
   top: 85px;
   left: 55px;
   font-weight: 400;
+  border-radius: 5px 5px 5px 5px;
   color: #0f11119f;
 }
 
@@ -164,4 +178,23 @@ body {
   position: absolute;
   right: 400px;
   padding: 20px;
+}
+
+#loginHyper {
+  color: #d54747;
+  text-decoration: none;
+}
+
+.input__filed {
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 15px;
+  box-shadow: rgba(213, 217, 217, 0.196) 0 2px 5px 0;
+  box-sizing: border-box;
+  color: #0f1111;
+  font-family: "Amazon Ember", sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  margin: 10px;
 }
