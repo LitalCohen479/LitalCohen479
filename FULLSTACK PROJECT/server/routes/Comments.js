@@ -17,7 +17,16 @@ await Comments.create(comment);
 res.json(comment);    
   })
 
+router.delete('/:commentId', validateToken, async (req, res)=>{
+  const commentId=req.params.commentId;
 
+  await Comments.destroy({
+    where:{
+      id:commentId,
+    },
+  });
+  res.json("Comment Deleted")
+})
 
 
 

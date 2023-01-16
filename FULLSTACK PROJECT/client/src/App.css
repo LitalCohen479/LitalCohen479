@@ -1,9 +1,9 @@
+
 .App {
-  width: 100vw;
+  width: 100%;
   height: auto;
   display: flex;
   align-items: center;
-  padding-top: 40px;
   flex-direction: column;
 }
 
@@ -55,6 +55,9 @@ body {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+
+/* CREATE POST PAGE CSS */
+
 .createPostPage {
   font-family: Arial, Helvetica, sans-serif;
   width: 100vw;
@@ -101,8 +104,10 @@ body {
 span {
   color: red;
 }
+
 /* NAVBAR */
-.navbar{
+
+.navbar {
   width: 100%;
   height: 70px;
   background-color: dodgerblue;
@@ -110,12 +115,42 @@ span {
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
 }
-.navbar a{
+.navbar .links {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .loggedInContainer {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navbar a {
   margin-left: 20px;
   text-decoration: none;
   color: white;
 }
 
+.navbar button {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  margin-right: 10px;
+  background-color: white;
+}
+
+.navbar h1 {
+  text-align: right;
+  margin-right: 10px;
+  color: white;
+  font-weight: lighter;
+}
+
+/* INDIVIDUAL POST */
 .postPage {
   display: flex;
   flex-direction: row;
@@ -135,22 +170,9 @@ span {
   height: calc(100vh - 70px);
   display: grid;
   place-items: center;
+  display: flex;
+  flex-direction: column;
 }
-
-#individual {
-  height: 500px;
-  width: 600px;
-}
-
-#individual .title,
-#individual .footer {
-  font-size: 30px;
-}
-
-#individual .body {
-  font-size: 25px;
-}
-
 
 .rightSide .addCommentContainer {
   flex: 20%;
@@ -194,58 +216,69 @@ button {
   margin-top: 20px;
 }
 
+#individual {
+  height: 500px;
+  width: 600px;
+}
 
-  /* LOGIN */
-  
-  .loginContainer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    padding-top: 100px;
-  }
-  
-  .loginContainer input,
-  button {
-    width: 200px;
-    height: 50px;
-    border-radius: 8px;
-    border: none;
-    margin: 10px;
-  }
-  
-  .loginContainer button {
-    background-color: dodgerblue;
-    color: white;
-  }
-  
-  .loginContainer input {
-    border: 2px solid dodgerblue;
-  }
-  .loginContainer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    padding-top: 100px;
-  }
-  
-  .loginContainer input,
-  button {
-    width: 200px;
-    height: 50px;
-    border-radius: 8px;
-    border: none;
-    margin: 10px;
-  }
-  
-  .loginContainer button {
-    background-color: dodgerblue;
-    color: white;
-  }
-  
-  .loginContainer input {
-    border: 2px solid dodgerblue;
-  }
+#individual .title,
+#individual .footer {
+  font-size: 30px;
+}
+
+#individual .body {
+  font-size: 25px;
+}
+
+/* LOGIN */
+
+.loginContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  padding-top: 100px;
+}
+
+.loginContainer input,
+button {
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  margin: 10px;
+}
+
+.loginContainer button {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.loginContainer input {
+  border: 2px solid dodgerblue;
+}
+.footer .username {
+  flex: 50%;
+}
+.footer .buttons {
+  flex: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.likeBttn {
+  color: rgba(250, 250, 250, 0.597);
+}
+.unlikeBttn {
+  color: white;
+}
+
+.buttons label {
+  margin-right: 20px;
+  margin-left: 10px;
+}
+.changePassword_btn{
+  cursor: pointer;
+}
