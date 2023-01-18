@@ -14,10 +14,10 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "b00e4b659d1f1e",
-    "password": "83b7c9a2",
-    "database": "heroku_cbe6e0fb2426b26",
-    "host": "us-cdbr-east-06.cleardb.net",
+    "username": "root",
+    "password": "1234",
+    "database": "FullstackProjectDB",
+    "host": "localhost",
     "dialect": "mysql"
   }
 }

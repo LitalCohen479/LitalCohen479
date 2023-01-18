@@ -27,16 +27,16 @@ function ChangePassword() {
   };
 
   return (
-    <div>
-      <h1>Change Password</h1>
-      <input
+    <div className="changePasswordContainer">
+      <h1 className="changePassword">Change Your Password</h1>
+      <input className="changepasswordInput"
         type="text"
         placeholder="Old Password..."
         onChange={(event) => {
           setOldPassword(event.target.value);
         }}
       />
-      <input
+      <input className="changepasswordInput"
         type="text"
         placeholder="New Password..."
         onChange={(event) => {
